@@ -1,0 +1,6 @@
+docker run -d --name gluetun --cap-add=NET_ADMIN \
+-e VPNSP=custom -e VPN_TYPE=openvpn \
+-v /opt/gluetun:/gluetun \
+-e OPENVPN_CUSTOM_CONFIG=/gluetun/conf.ovpn \
+-e OPENVPN_USER=user -e OPENVPN_PASSWORD=pass \
+qmcgaw/gluetun
