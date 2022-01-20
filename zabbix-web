@@ -1,0 +1,8 @@
+docker run --name zabbix-web-nginx-mysql -t --restart unless-stopped \
+-e DB_SERVER_HOST="zabbix-mysql-server" \
+-e MYSQL_DATABASE="zabbix" \
+-e MYSQL_USER="zabbix" \
+-e MYSQL_PASSWORD="pass" \
+-e MYSQL_ROOT_PASSWORD="root_pass" --link zabbix-mysql-server:mysql --link zabbix-server-mysql:zabbix-server \
+-p 8975:8080  \
+-d zabbix/zabbix-web-nginx-mysql

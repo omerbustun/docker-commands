@@ -1,0 +1,2 @@
+docker run --name zabbix-java-gateway -t --restart unless-stopped \
+-d zabbix/zabbix-java-gateway
