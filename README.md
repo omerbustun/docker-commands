@@ -1,2 +1,2 @@
 # docker-commands
-Docker commands that I need frequently in the same place.
+Docker commands that I often need in the same place.
